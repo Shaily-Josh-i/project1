@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(214, 214, 214);
+    line-height: 1.35rem;
+}
+
+/* header styling  */
+.active{
+    background-color: blue;
+}
+header{
+    background-color: rgb(27,27,27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header .box{
+    width: 900px;
+}
+header .top{
+    margin: 4rem 0;
+}
+header .top .description{
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+}
+header span{
+    color: rgb(35, 35, 255);
+}
+header ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+header li{
+    padding: 1.5rem;
+}
+header li:hover{
+    background-color: blue;
+}
+header .heading{
+    font-size: 3rem;
+}
+header nav{
+    background-color: rgb(35, 35, 255);
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* main division styling  */
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main a{
+    color: rgb(255, 0, 140);
+}
+.main .mainleft p{
+    margin-top: 1rem;
+}
+.main .mainleft ul{
+    margin-top: 1.5rem;
+}
+.main .mainleft ul li{
+    margin: 1rem;
+}
+.main .mainleft ul li i{
+    margin-right: 1rem;
+    color: grey;
+}
+.main .mainright ul li i{
+    margin: 0.5rem 1rem;
+    color: grey;
+}
+.main .mainright .icon{
+    color: grey;
+    margin-left: 0.5rem;
+}
+.main .mainright input{
+    width: 6.5rem;
+    padding: 0.2rem;
+}
+.main .box{
+    background-color: white;
+    width: 900px;
+    display: flex;
+}
+.main .box .mainleft, .main .box .mainright{
+    margin: 2rem;
+}
+.main li{
+    list-style-type: none;
+}
+.head-dark{
+    font-size: 1.5rem;
+}
+.block{
+    margin: 1.5rem 0;
+}
+.head-blue{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(35, 35, 255);
+    margin-bottom: 1.5rem;
+}
+.blue-head{
+    font-size: 1rem;
+    color: rgb(35, 35, 255);
+}
+.small-text{
+    margin-top: 1rem;
+}
+.mainright p{
+    font-size: 0.85rem;
+}
+
+/* footer styling  */
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+footer .box{
+    width: 900px;
+    text-align: center;
+    background-color: rgb(35, 35, 255);
+    color: white;
+    font-size: 0.75rem;
+}
+footer .box .text{
+    margin: 1.25rem;
+}
+
+/* media queries  */
+@media (max-width:950px){
+    header .box, .main .box, footer .box{
+        width: 650px;
+    }
+    .main .box{
+        flex-wrap: wrap;
+    }
+    header li{
+        padding: 1.2rem;
+    }
+}
+@media (max-width:700px){
+    header .box, .main .box, footer .box{
+        width: 500px;
+    }
+    header li{
+        padding: 1rem;
+    }
+    nav ul{
+        justify-content: space-between;
+    }
+}
+@media (max-width:550px){
+    header .box, .main .box, footer .box{
+        width: 425px;
+    }
+    header li{
+        padding: 1rem;
+    }
+}
+@media (max-width:475px){
+    header .box, .main .box, footer .box{
+        width: 325px;
+    }
+    header li{
+        padding: 0.75rem;
+    }
+}
+@media (max-width:350px){
+    header .box, .main .box, footer .box{
+        width: 300px;
+    }
+    header li{
+        padding: 0.75rem;
+    }
+}
